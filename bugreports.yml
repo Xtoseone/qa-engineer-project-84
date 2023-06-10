@@ -1,0 +1,138 @@
+---
+- summary: |
+    не отображается иконка англ языка
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть выпадающий список Language
+  expected-result: |
+    Должна отображаться иконка английского флага
+  actual-result: |
+    иконка не отображается
+
+- summary: |
+    выбранный фильтр Категория в Sidebar не сбрасывается при повторном нажатии
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть выпадающий список Категории
+    2. выбрать любую категорию
+    3. повторно выбрать эту же категорию
+  expected-result: |
+    категория должна сбрасываться
+  actual-result: |
+    категория не сбрасывается
+
+- summary: |
+    При отключении чекбокса В наличии должны показываться все товары в магазине
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. отключить чекбокс В наличии
+  expected-result: |
+    При отключении чекбокса В наличии должны показываться все товары в магазине
+  actual-result: |
+    отображается надпись not found вместо списка товаров
+
+- summary: |
+    не работает фильтр From при единичном его использовании
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. ввести в фильтр Frome любое значение Например 1000
+  expected-result: |
+    товар должен отсортироваться по фильтру ОТ 1000
+  actual-result: |
+    ничего не происходит
+    
+- summary: |
+    при вводе неправильных данных в input меню From и To должна отображаться ошибка
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. ввести в From 'ловыпошэ'
+    2. ввести в меню To 'dsgdgdsggsdg'
+  expected-result: |
+    Должна отображаться ошибка о неверном формате данных
+  actual-result: |
+    ошибка не отображается ничего не происходит
+    
+- summary: |
+    при вводе неправильных данных (выше указанного лимита) в input меню To должна отображаться ошибка
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. ввести в меню To 10000000
+  expected-result: |
+    Должна отображаться ошибка о превышении лимита 
+  actual-result: |
+    ошибка не отображается ничего не происходит
+    
+- summary: |
+    на небольших экранах 1280*688 происходит смещение текста в карточка товаров
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. поставить размер экрана в devtools 1280*688
+  expected-result: |
+    текст не должен накладываться и смещаться на различных экранах 
+  actual-result: |
+    происходит смещение теста в карточках товаров
+    
+- summary: |
+    пагинация сделана не верно. пользователь не видит сколько всего страниц и на какой странице он находится
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть главную страницу магазина с фильтрами по умолчанию
+  expected-result: |
+    пагинация сделана не верно. пользователь не видит сколько всего страниц и на какой странице он находится
+  actual-result: |
+    есть только две кнопки previous and next
+    
+- summary: |
+    Description в описании товара отображается не полностью
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть страницу товара https://hexlet-products-store.vercel.app/products/2
+  expected-result: |
+    пользователь должен иметь возможноть развернуть полностью описание или видеть его сразу полностью
+  actual-result: |
+    Description в описании товара отображается не полностью
+    
+- summary: |
+    Необходимо выровнить текст в таблице товаров на странице корзины
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. добавить несколько различных товаров (https://hexlet-products-store.vercel.app/products/1 / https://hexlet-products-store.vercel.app/products/3 / https://hexlet-products-store.vercel.app/products/8)
+    2. перейти в корзину товаров
+  expected-result: |
+    текст должен быть выровнен по столбцам в данном случае столбец с количеством товаров смещается при длинном названии товара
+  actual-result: |
+    текст должен быть выровнен
+    
+- summary: |
+    не хватает кнопки Back на странице карточки товара
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть https://hexlet-products-store.vercel.app/products/1
+  expected-result: |
+    должна быть кнопка Back чтобы пользователю было удобно возваращться к списку товаров
+  actual-result: |
+    нет кнопки Back, соответственно пользователю необходимо использвать кнопку Store, что является не удобным, так как выбранные фильтры сбрасываются
+    
+    
