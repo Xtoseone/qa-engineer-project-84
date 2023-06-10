@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница
   test-data: |
-    ---
+    []
   steps:
     - нажать на кнопку registation or login
   expected-result: |
@@ -19,7 +19,7 @@
   prerequisites: |
     Открыта главная страница
   test-data: |
-    ---
+    []
   steps:
     - нажать на кнопку Язык в Header
     - сменить язык
@@ -33,7 +33,7 @@
   prerequisites: |
     Открыта главная страница
   test-data: |
-    ---
+    []
   steps:
     - нажать на кнопку Language в Header
   expected-result: |
@@ -73,14 +73,12 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    ---
+    []
   steps:
     - нажать на выпадающий список Category в Sidebar
     - выбрать любую категорию
   expected-result: |
     Пользователь видит товар только выбранной категории
-  Notes: обычно делают тесткейсы для каждой категории товара, чтобы проверить правильность работы каждого фильтра в выпадающем списке. Бывают случаи когда бэк присылает не верные данные, но такие тесты лучше всего автоматизировать,
-  потому что иногда выпадающие списки имеют в массиве очень много фильтров.
   
 - summary: |
     тестирование выпадающего списка Category. Сброс выбранной категории
@@ -117,7 +115,7 @@
   prerequisites: |
     открыта главная страница магазина. In Stock выбрана по умолчанию
   test-data: |
-    ---
+    []
   steps: 
     - Нажать на чекбокс In Stock
   expected-result: |
@@ -192,7 +190,7 @@
   prerequisites: |
     Открыта главная страница
   test-data: |
-    ---
+    []
   steps:
     - нажать на кнопку Next 
     - нажать на кнопку Previous
@@ -219,7 +217,7 @@
   prerequisites: |
     Открыта гланая страница
   test-data: |
-    ---
+    []
   steps:
     - выбрать какой-либо товар и нажать на кнопку Add to card
   expected-result: |
@@ -232,7 +230,7 @@
   prerequisites: |
     Открыта карточка товара iPhone X
   test-data: |
-    ---
+    []
   steps:
     - нажать на кнопку Add to card
   expected-result: |
@@ -245,7 +243,7 @@
   prerequisites: |
     Открыта карточка товара iPhone X
   test-data: |
-    ---
+    []
   steps: 
     - посмотреть на меню description 
   expected-result: |
@@ -258,7 +256,7 @@
   prerequisites: |
     открыта страница корзины и добавлено несколько товаров в корзине
   test-data: |
-    ---
+    []
   steps: 
     - нажать на кнопку Clear cart
   expected-result: |
@@ -271,7 +269,7 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
     - нажать на кнопку continue shopping
   expected-result: |
@@ -284,7 +282,7 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
     - сравнить сумму выбранных товаров с counter total
   expected-result: |
@@ -297,7 +295,7 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
     - нажать checkout
   expected-result: |
@@ -310,9 +308,9 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
-    ---
+    - смотрим на таблицу
   expected-result: |
     Таблица товаров в Cart должна отражать полный список выбранных товаров, их количества и цену
     
@@ -323,9 +321,9 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
-    ---
+    - смотрим на таблицу
   expected-result: |
     Таблица товаров в Cart должна быть выровнена по столбцам
  
@@ -336,7 +334,7 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
     - use any delete btn in the Cart 
   expected-result: |
@@ -349,7 +347,7 @@
   prerequisites: |
     открыта страница корзины и выбрано несколько товаров
   test-data: |
-    ---
+    []
   steps: 
     - нажать на любой товар в карточке товаров 
   expected-result: |
