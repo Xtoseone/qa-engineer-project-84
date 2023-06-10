@@ -1,0 +1,259 @@
+---
+test-cases:
+  - summary: |
+      Регистрация пользователя и вход
+    status: fail
+
+  - summary: |
+      Смена языка в Header
+    status: pass
+
+ - summary: |
+      Проверка данных в выпадающем списке Language на соответствие
+    status: pass
+    
+ - summary: |
+      Проверка Search панели. Ввод правильных данных в input menu Search
+    status: pass
+    
+ - summary: |
+      Проверка Search панели. Ввод неправильных данных в input menu Search
+    status: pass
+    
+ - summary: |
+      тестирование выпадающего списка Category
+    status: pass
+    
+ - summary: |
+      тестирование выпадающего списка Category. Сброс выбранной категории
+    status: fail
+    
+ - summary: |
+      выбор фильтров Brand в Sidebar
+    status: pass
+    
+ - summary: |
+      Проверка фильтра In Stock. Отключение фильтра.
+    status: fail
+    
+ - summary: |
+      Проверка фильтра Price. Ввод верных данных
+    status: pass
+    
+ - summary: |
+      Проверка фильтра Price. Ввод верных данных только в меню Frome
+    status: pass
+    
+ - summary: |
+      Проверка фильтра Price. Ввод неверных данных.
+    status: fail
+    
+ - summary: |
+      Тестирование нескольких различных фильтров в Sidebar
+    status: pass
+    
+ - summary: |
+      Тестирование панели пагинации
+    status: fail
+    
+ - summary: |
+      тестирование магазина на различных размерах экрана. Например 1280*688
+    status: fail
+
+ - summary: |
+      Тестирование Add to card
+    status: pass
+
+ - summary: |
+      Тестирование Add to card в карточке товара
+    status: pass
+
+ - summary: |
+      Описание в карточки товара
+    status: fail
+
+ - summary: |
+      тестирование кнопки Clear cart в корзине товаров
+    status: pass
+
+ - summary: |
+      тестирование кнопки continue shopping в корзине товаров
+    status: pass
+    
+  - summary: |
+      тестирование total
+    status: pass   
+    
+   - summary: |
+      тестирование списка товаров в Cart
+    status: pass  
+    
+    - summary: |
+      тестирование визуальной состовляющей списка товаров в Cart
+    status: pass 
+       
+   - summary: |
+      кнопка delete
+    status: pass  
+    
+    - summary: |
+      ссылка на карточку товара в Корзине
+    status: pass  
+       
+    
+bugreports:
+  - summary: |
+      в выпадающем списке category не должно быть пустого поля, вместо него должно быть Clear
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. открыть выпадающий список category в sidebar
+    expected-result: |
+      в выпадающем списке category не должно быть пустого поля, вместо него должно быть Clear
+    actual-result: |
+      пустая строка в выпадающем списке
+ 
+ - summary: |
+      после использования пустой строки в выпадающем списке Категорий выбор фильтров по брендам перестает работать
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. выбрать пустую строку в категории
+      2. выбрать любые бренды
+    expected-result: |
+      показываются товары выбранных брендо
+    actual-result: |
+      товары не сортируются
+      
+ - summary: |
+      отключение фильтра в наличии должно показывать все товары в магазине. сейчас это работает наоборот.
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. отключить фильтр в наличии
+    expected-result: |
+      показываются все товары
+    actual-result: |
+      эта функция работает наоборот при включенном фильтре в наличии пользователь видит все товары, а при отключении только некоторые
+      
+ - summary: |
+      при вводе неверных данных в меню ввода frome и to должна показываться ошибка а товар не должен отображаться
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. ввести в меню Frome 999999
+      2. ввести в меню To фллрпрвпыорфып
+    expected-result: |
+      при вводе неверных данных в меню ввода frome и to должна показываться ошибка а товар не должен отображаться
+    actual-result: |
+      ничего не проиходит
+
+ - summary: |
+      у пользователя должна быть возможность зарегестрироваться ил залогинеться
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. открыть главную страницу магазина
+    expected-result: |
+       у пользователя должна быть возможность зарегестрироваться ил залогинеться
+    actual-result: |
+      нет возможности залогинеться или зарегистрироваться
+      
+ - summary: |
+      строка поиска не должна менять размер в зависимости от количества карточек товаров на экране
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. выбрать в sidebar Apple
+      2. ввести в меню From 1000
+    expected-result: |
+       строка поиска не должна менять размер в зависимости от количества карточек товаров на экране
+    actual-result: |
+      строка поиска меняет размер в зависимости от количества карточек товаров
+
+ - summary: |
+      при переключении языка с англ на русский и нажатии кнопки Магазин в Header язык переключается обратно на англ
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. выбрать русский язык
+      2. нажать на кнопку магазин
+    expected-result: |
+      язык должен оставаться выбранным
+    actual-result: |
+      при переключении языка с англ на русский и нажатии кнопки Магазин в Header язык переключается обратно на англ  
+      
+ - summary: |
+      в корзине товаров не должно быть значения сколько штук на складе
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. выбрать любой товар и добавить в корзину
+      2. открыть корзину
+    expected-result: |
+      в корзине товаров не должно быть значения сколько штук на склад
+    actual-result: |
+      в корзине товаров указано значения сколько штук на склад
+ 
+  - summary: |
+      таблица с товарами в корзине не должна двигаться при изменении количества товаров
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. выбрать любой товар и добавить в корзину 10 шт
+      2. открыть корзину
+      3. нажимаем кнопку delete 
+    expected-result: |
+      таблица с товарами в корзине не должна двигаться при изменении количества товаров
+    actual-result: |
+      таблица двигается в зависимости от количества товаров
+      
+  - summary: |
+      таблица с товарами в Order placed successfully должна быть выровнена
+    environment: |
+      Brave beta Windows 11
+    steps-to-reproduce: |
+      1. выбрать несколько товаров и добавить в корзину (https://products-store-git-v2bugfixes-hexlet-components.vercel.app/products/1 https://products-store-git-v2bugfixes-hexlet-components.vercel.app/products/3 https://products-store-git-v2bugfixes-hexlet-components.vercel.app/products/5)
+      2. открыть корзину
+      3. нажимаем кнопку checkout 
+    expected-result: |
+      таблица с товарами в Order placed successfully должна быть выровнена
+    actual-result: |
+      таблица с товарами в Order placed successfully не выровнена   
+      
+ - summary: |
+      пагинация сделана не верно. пользователь не видит сколько всего страниц и на какой странице он находится
+   environment: |
+      Browser Brave beta
+      Windows 11
+   steps-to-reproduce: |
+     1. открыть главную страницу магазина с фильтрами по умолчанию
+   expected-result: |
+      пагинация сделана не верно. пользователь не видит сколько всего страниц и на какой странице он находится
+   actual-result: |
+      есть только две кнопки previous and next
+      
+ - summary: |
+     Description в описании товара отображается не полностью
+   environment: |
+     Browser Brave beta
+     Windows 11
+   steps-to-reproduce: |
+     1. открыть страницу товара https://hexlet-products-store.vercel.app/products/2
+   expected-result: |
+     пользователь должен иметь возможноть развернуть полностью описание или видеть его сразу полностью
+   actual-result: |
+     Description в описании товара отображается не полностью
+    
+    
+ - summary: |
+     не хватает кнопки Back на странице карточки товара
+   environment: |
+     Browser Brave beta
+     Windows 11
+   steps-to-reproduce: |
+     1. открыть https://hexlet-products-store.vercel.app/products/1
+   expected-result: |
+     должна быть кнопка Back чтобы пользователю было удобно возваращться к списку товаров
+   actual-result: |
+     нет кнопки Back, соответственно пользователю необходимо использвать кнопку Store, что является не удобным, так как выбранные фильтры сбрасываются   
