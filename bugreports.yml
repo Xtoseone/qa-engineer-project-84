@@ -1,5 +1,17 @@
 ---
 - summary: |
+    нет возможности залогинеться или зарегестрироваться
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть главную страницу
+  expected-result: |
+    Должна быть возможность залогинеться или зарегестрироваться
+  actual-result: |
+    нет возможности залогинеться или зарегестрироваться
+
+- summary: |
     не отображается иконка англ языка
   environment: |
     Browser Brave beta
