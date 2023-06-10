@@ -1,5 +1,9 @@
 ---
 - summary: |
+    Регистрация пользователя и вход
+  status: fail
+
+- summary: |
     Смена языка в Header
   status: succefully
   
