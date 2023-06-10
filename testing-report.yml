@@ -1,0 +1,96 @@
+---
+- summary: |
+    Смена языка в Header
+  status: succefully
+  
+- summary: |
+    Проверка данных в выпадающем списке Language на соответствие
+  status: fail
+
+- summary: |
+    Проверка Search панели. Ввод правильных данных в input menu Search
+  status: succefully
+
+- summary: |
+    Проверка Search панели. Ввод неправильных данных в input menu Search
+  status: succefully
+
+- summary: |
+    тестирование выпадающего списка Category
+  status: succefully
+
+- summary: |
+    тестирование выпадающего списка Category. Сброс выбранной категории
+  status: fail
+
+- summary: |
+    выбор фильтров Brand в Sidebar
+  status: succefully
+
+- summary: |
+    Проверка фильтра In Stock. Откл.чение фильтра.
+  status: fail
+
+- summary: |
+    Проверка фильтра Price. Ввод верных данных
+  status: succefully
+
+- summary: |
+    Проверка фильтра Price. Ввод верных данных только в меню Frome
+  status: fail
+
+- summary: |
+    Проверка фильтра Price. Ввод неверных данных.
+  status: succefully
+
+- summary: |
+   Тестирование нескольких различных фильтров в Sidebar
+  status: succefully
+
+- summary: |
+    Тестирование панели пагинации
+  status: succefully
+
+- summary: |
+    тестирование магазина на различных размерах экрана. Например 1280*688
+  status: fail
+
+- summary: |
+    Тестирование Add to card
+  status: succefully
+  
+- summary: |
+    Тестирование Add to card в карточке товара
+  status: succefully
+  
+- summary: |
+    Описание в карточки товара
+  status: fail
+    
+- summary: |
+    тестирование кнопки Clear cart в корзине товаров
+  status: succefully
+    
+- summary: |
+    тестирование кнопки continue shopping в корзине товаров
+  status: succefully
+    
+- summary: |
+    тестирование total
+  status: succefully
+    
+- summary: |
+    тестирование списка товаров в Cart
+  status: succefully
+    
+- summary: |
+    тестирование визуальной состовляющей списка товаров в Cart
+  status: fail
+    
+- summary: |
+    кнопка delete
+  status: succefully
+    
+- summary: |
+    ссылка на карточку товара в Корзине
+  status: succefully
