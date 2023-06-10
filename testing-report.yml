@@ -5,7 +5,7 @@
 
 - summary: |
     Смена языка в Header
-  status: succefully
+  status: pass
   
 - summary: |
     Проверка данных в выпадающем списке Language на соответствие
@@ -13,15 +13,15 @@
 
 - summary: |
     Проверка Search панели. Ввод правильных данных в input menu Search
-  status: succefully
+  status: pass
 
 - summary: |
     Проверка Search панели. Ввод неправильных данных в input menu Search
-  status: succefully
+  status: pass
 
 - summary: |
     тестирование выпадающего списка Category
-  status: succefully
+  status: pass
 
 - summary: |
     тестирование выпадающего списка Category. Сброс выбранной категории
@@ -29,7 +29,7 @@
 
 - summary: |
     выбор фильтров Brand в Sidebar
-  status: succefully
+  status: pass
 
 - summary: |
     Проверка фильтра In Stock. Откл.чение фильтра.
@@ -37,7 +37,7 @@
 
 - summary: |
     Проверка фильтра Price. Ввод верных данных
-  status: succefully
+  status: pass
 
 - summary: |
     Проверка фильтра Price. Ввод верных данных только в меню Frome
@@ -45,15 +45,15 @@
 
 - summary: |
     Проверка фильтра Price. Ввод неверных данных.
-  status: succefully
+  status: pass
 
 - summary: |
    Тестирование нескольких различных фильтров в Sidebar
-  status: succefully
+  status: pass
 
 - summary: |
     Тестирование панели пагинации
-  status: succefully
+  status: pass
 
 - summary: |
     тестирование магазина на различных размерах экрана. Например 1280*688
@@ -61,11 +61,11 @@
 
 - summary: |
     Тестирование Add to card
-  status: succefully
+  status: pass
   
 - summary: |
     Тестирование Add to card в карточке товара
-  status: succefully
+  status: pass
   
 - summary: |
     Описание в карточки товара
@@ -73,19 +73,19 @@
     
 - summary: |
     тестирование кнопки Clear cart в корзине товаров
-  status: succefully
+  status: pass
     
 - summary: |
     тестирование кнопки continue shopping в корзине товаров
-  status: succefully
+  status: pass
     
 - summary: |
     тестирование total
-  status: succefully
+  status: pass
     
 - summary: |
     тестирование списка товаров в Cart
-  status: succefully
+  status: pass
     
 - summary: |
     тестирование визуальной состовляющей списка товаров в Cart
@@ -93,8 +93,8 @@
     
 - summary: |
     кнопка delete
-  status: succefully
+  status: pass
     
 - summary: |
     ссылка на карточку товара в Корзине
-  status: succefully
+  status: pass
