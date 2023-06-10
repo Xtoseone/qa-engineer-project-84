@@ -104,7 +104,8 @@ bugreports:
   - summary: |
       в выпадающем списке category не должно быть пустого поля, вместо него должно быть Clear
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. открыть выпадающий список category в sidebar
     expected-result: |
@@ -115,7 +116,8 @@ bugreports:
   - summary: |
       после использования пустой строки в выпадающем списке Категорий выбор фильтров по брендам перестает работать
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. выбрать пустую строку в категории
       2. выбрать любые бренды
@@ -127,7 +129,8 @@ bugreports:
   - summary: |
       отключение фильтра в наличии должно показывать все товары в магазине. сейчас это работает наоборот.
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. отключить фильтр в наличии
     expected-result: |
@@ -138,7 +141,8 @@ bugreports:
   - summary: |
       при вводе неверных данных в меню ввода frome и to должна показываться ошибка а товар не должен отображаться
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. ввести в меню Frome 999999
       2. ввести в меню To фллрпрвпыорфып
@@ -150,7 +154,8 @@ bugreports:
   - summary: |
       у пользователя должна быть возможность зарегестрироваться ил залогинеться
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. открыть главную страницу магазина
     expected-result: |
@@ -161,7 +166,8 @@ bugreports:
   - summary: |
       строка поиска не должна менять размер в зависимости от количества карточек товаров на экране
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. выбрать в sidebar Apple
       2. ввести в меню From 1000
@@ -173,7 +179,8 @@ bugreports:
   - summary: |
       при переключении языка с англ на русский и нажатии кнопки Магазин в Header язык переключается обратно на англ
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. выбрать русский язык
       2. нажать на кнопку магазин
@@ -185,7 +192,8 @@ bugreports:
   - summary: |
       в корзине товаров не должно быть значения сколько штук на складе
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. выбрать любой товар и добавить в корзину
       2. открыть корзину
@@ -197,7 +205,8 @@ bugreports:
   - summary: |
       таблица с товарами в корзине не должна двигаться при изменении количества товаров
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. выбрать любой товар и добавить в корзину 10 шт
       2. открыть корзину
@@ -210,7 +219,8 @@ bugreports:
   - summary: |
       таблица с товарами в Order placed successfully должна быть выровнена
     environment: |
-      Brave beta Windows 11
+      Brave beta 
+      Windows 11
     steps-to-reproduce: |
       1. выбрать несколько товаров и добавить в корзину (https://products-store-git-v2bugfixes-hexlet-components.vercel.app/products/1 https://products-store-git-v2bugfixes-hexlet-components.vercel.app/products/3 https://products-store-git-v2bugfixes-hexlet-components.vercel.app/products/5)
       2. открыть корзину
