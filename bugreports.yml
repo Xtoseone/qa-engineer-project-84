@@ -147,4 +147,30 @@
   actual-result: |
     нет кнопки Back, соответственно пользователю необходимо использвать кнопку Store, что является не удобным, так как выбранные фильтры сбрасываются
     
+- summary: |
+    500ая ошибка после нажатия кнопки checkout в корзине товаров
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. открыть https://hexlet-products-store.vercel.app/products/1
+    2. добавить товар в cart
+    3. открыть cart и нажать checkout
+  expected-result: |
+    статус запроса должен быть 200
+    Note: чаще всего все 5xx это ошибки бэкэнда / 4xx это проблемы фронта
+  actual-result: |
+    запрос имеет статус 500
+
+- summary: |
+    Кнопка закрытия "Х" в модале Order placed successfully не работает
+  environment: |
+    Browser Brave beta
+    Windows 11
+  steps-to-reproduce: |
+    1. нажать кнопку checkout в корзине с товарами, чтобы вызвать Order placed successfully модал
+  expected-result: |
+    Кнопка закрытия "Х" в модале Order placed successfully должна закрывать модал
+  actual-result: |
+    Кнопка закрытия "Х" в модале Order placed successfully не работает и не закрывает модал
     
