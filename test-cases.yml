@@ -4,7 +4,7 @@
   requirement: |
     Язык должен меняться на всей платформе при переключении
   prerequisites: |
-    Открыта главная страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps:
@@ -18,7 +18,7 @@
   requirement: |
     При раскрытии выпадающего списка юзер должен увидеть две строки Russia and English и соответствующие иконки к ним
   prerequisites: |
-    Открыта главная страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps:
@@ -26,13 +26,12 @@
   expected-result: |
     юзер видит две строки Russia and English и соответствующие иконки к ним
   
-  
 - summary: |
     Проверка Search панели. Ввод правильных данных в input menu Search
   requirement: |
     При вводе существующего товара пользователь должен его увидеть
   prerequisites: |
-    Открыта главная страница магазина https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Пример товара: iphone
   steps:
@@ -45,7 +44,7 @@
   requirement: |
     При вводе несуществующего товара пользователь должен увидеть надпись Nothing found!
   prerequisites: |
-    Открыта главная страница магазина https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Пример товара: яблоко
   steps: 
@@ -58,7 +57,7 @@
   requirement: |
     при выборе любой категории категории пользователь должен увидеть только соответствующий товар
   prerequisites: |
-    Открыта главная страница магазина https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps:
@@ -72,7 +71,7 @@
   requirement: |
     при повторном нажатии на выбранную категорию она должна отключаться
   prerequisites: |
-    Открыта главная страница магазина. https://hexlet-products-store.vercel.app/
+    Открыта главная страница магазина. 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Выбрана категория smartphones
   steps: 
@@ -86,7 +85,7 @@
   requirement: |
     при нажатии на чекбоксы каких-либо брендов пользователь должен увидеть только товары выбранных брендов
   prerequisites: |
-    открыта главная страница магазина https://hexlet-products-store.vercel.app/
+    открыта главная страница магазина 'https://hexlet-products-store.vercel.app/'
   test-data: |
     не должно быть выбрано ниодного товара
   steps:
@@ -100,7 +99,7 @@
   requirement: |
     При отключении фильтра пользователь должен увидеть все товары магазина, включая те, которых нет в наличии
   prerequisites: |
-    открыта главная страница магазина. In Stock выбрана по умолчанию https://hexlet-products-store.vercel.app/
+    открыта главная страница магазина. In Stock выбрана по умолчанию 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps: 
@@ -113,7 +112,7 @@
   requirement: |
     При вводе данных из верного диапозона в нашем случае 0-11190 юзер должен увидеть только товары с заданным ценовым диапозоном
   prerequisites: |
-    открыта главная страница https://hexlet-products-store.vercel.app/
+    открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Frome 1000
     To 10000
@@ -128,7 +127,7 @@
   requirement: |
     При вводе данных из верного диапозона в нашем случае 0-11190 юзер должен увидеть только товары с заданным ценовым диапозоном
   prerequisites: |
-    открыта главная страница https://hexlet-products-store.vercel.app/
+    открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Frome 1000
   steps: 
@@ -141,12 +140,12 @@
   requirement: |
     При вводе данных из неверных данных или неверного диапозона юзер должен увидеть Not found и сообщение об ошибке
   prerequisites: |
-    открыта главная страница https://hexlet-products-store.vercel.app/
+    открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Frome sdgsg
     To 999999999
   steps: 
-    - ввести в input menu Frome sdgsg
+    - ввести в input menu Frome 'sdgsg'
     - ввести в input menu To 999999999
   expected-result: |
     юзер видит сообщение об ошибке и Not found
@@ -156,7 +155,7 @@
   requirement: |
     При выборе нескольки фильтров в Sidebar карточки товара должны соответствовать выбранным фильтрам
   prerequisites: |
-    открыта главная страница https://hexlet-products-store.vercel.app/
+    открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     Category smartphones
     Apple
@@ -175,7 +174,7 @@
   requirement: |
     При нажатии на панеле навигации кнопок Previous или Next страницы должны переключаться. при достижении последней страницы - кнопка Next не должна больше нажиматься. На первой странице не должна нажиматься кнопка Previous
   prerequisites: |
-    Открыта главная страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps:
@@ -189,7 +188,7 @@
   requirement: |
     На различных экранах карточки товара и общий вид магазина не должны иметь смещения текста и прочих изменений
   prerequisites: |
-    Открыта главная страница https://hexlet-products-store.vercel.app/
+    Открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     размер экрана 1280*688
   steps: 
@@ -202,7 +201,7 @@
   requirement: |
     При использовании кнопка Add to cart товар должен отправиться в корзину
   prerequisites: |
-    Открыта гланая страница https://hexlet-products-store.vercel.app/
+    Открыта гланая страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps:
@@ -215,12 +214,12 @@
   requirement: |
     При использовании кнопки Add to cart товар должен отправиться в корзину, необходимо проверить соответствует ли действительности
   prerequisites: |
-    Открыта гланая страница https://hexlet-products-store.vercel.app/
+    Открыта гланая страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps:
     - выбрать какой-либо товар и нажать на кнопку Add to cart
-    - открыть корзину (Сart) https://hexlet-products-store.vercel.app/cart
+    - открыть корзину (Сart)
     - проверить соответствует ли товар добавленному
   expected-result: |
     выбранный товар добавился в корзину и соответствует ему
@@ -248,7 +247,7 @@
     []
   steps:
     - нажать на кнопку Add to cart 
-    - открыть корзину (Сart) https://hexlet-products-store.vercel.app/cart
+    - открыть корзину (Сart)
     - проверить соответствует ли товар добавленному
   expected-result: |
     выбранный товар добавился в корзину и соответствует ему
@@ -258,7 +257,7 @@
   requirement: |
     В карточке товара есть меню Description которое должно полностью видимым для пользователя
   prerequisites: |
-    Открыта карточка товара iPhone X https://hexlet-products-store.vercel.app/products/2
+    Открыта карточка товара iPhone X 'https://hexlet-products-store.vercel.app/products/2'
   test-data: |
     []
   steps: 
@@ -271,11 +270,10 @@
   requirement: |
     при нажатии на Clear cart корзина должна быть очищена полностью
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - нажать на кнопку Clear cart
   expected-result: |
@@ -286,11 +284,10 @@
   requirement: |
     при нажатии на continue shopping пользователь перенаправляется на страницу магазина с карточками товаров, при этом уже выбранные товары должны остаться в корзине
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - нажать на кнопку continue shopping
   expected-result: |
@@ -301,11 +298,10 @@
   requirement: |
     total в корзине товаров должно отражать общую сумму стоимости выбранных товаров
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - сравнить сумму выбранных товаров с counter total
   expected-result: |
@@ -316,11 +312,10 @@
   requirement: |
     checkout в корзине товаров должно отражать общую сумму стоимости выбранных товаров, полный список, количество и стоимость каждого товара в заказе в новом окне
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - нажать checkout
   expected-result: |
@@ -331,11 +326,10 @@
   requirement: |
     Таблица товаров в Cart должна отражать полный список выбранных товаров, их количества и цену 
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - смотрим на таблицу
   expected-result: |
@@ -346,11 +340,10 @@
   requirement: |
     Таблица товаров в Cart должна быть выровнена по столбцам
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - смотрим на таблицу
   expected-result: |
@@ -361,11 +354,10 @@
   requirement: |
     кнопка delete должна удалять товар из корзины
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - use any delete btn in the Cart 
   expected-result: |
@@ -376,11 +368,10 @@
   requirement: |
     При нажатии на строку с товаром в Корзине пользователь перенаправляется на выбранную карточку товара
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - нажать на любой товар в карточке товаров 
   expected-result: |
@@ -391,20 +382,21 @@
   requirement: |
     После каждого открытия главной страницы должен быть запрос с ответом и статус 304
   prerequisites: |
-    []
+    открыта главная страница 'https://hexlet-products-store.vercel.app/'
   test-data: |
-    URL главная страница https://hexlet-products-store.vercel.app/
+    URL 'https://hexlet-products-store.vercel.app/'
+    открыт DevTools
   steps: 
     - открыть URL главной страницы
   expected-result: |
-    проверить первый запрос при открытии страницы статус запроса 304 GET
+    проверить первый запрос, при открытии страницы статус запроса 304 GET
 
 - summary: |
     После открытия каждой карточки товара ожидается запрос GET с ответом и статус 200/304
   requirement: |
     После открытия каждой карточки товара ожидается запрос GET с ответом и статус 200/304
   prerequisites: |
-    главная страница открыта https://hexlet-products-store.vercel.app/
+    главная страница открыта 'https://hexlet-products-store.vercel.app/'
   test-data: |
     []
   steps: 
@@ -420,11 +412,10 @@
   requirement: |
     После открытия кнопки checkout ожидается запрос GET с ответом и статус 200
   prerequisites: |
-    открыта козина с добавленными в нее товарами https://hexlet-products-store.vercel.app/cart
-    товар 1 https://hexlet-products-store.vercel.app/products/1
-    товар 2 https://hexlet-products-store.vercel.app/products/2
+    открыта козина с добавленными в нее товарами 'https://hexlet-products-store.vercel.app/cart'
   test-data: |
-    []
+    товар 1 'https://hexlet-products-store.vercel.app/products/1'
+    товар 2 'https://hexlet-products-store.vercel.app/products/2'
   steps: 
     - нажать на кнопку checkout
   expected-result: |
