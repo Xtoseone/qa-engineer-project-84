@@ -1,23 +1,10 @@
 ---
 - summary: |
-    Регистрация пользователя и вход
-  requirement: |
-    Пользователь должен иметь возможность залогинеться и зарегистрироваться
-  prerequisites: |
-    Открыта главная страница
-  test-data: |
-    []
-  steps:
-    - нажать на кнопку registation or login
-  expected-result: |
-    Пользователь должен иметь возможность залогинеться и зарегистрироваться
-
-- summary: |
     Смена языка в Header
   requirement: |
     Язык должен меняться на всей платформе при переключении
   prerequisites: |
-    Открыта главная страница
+    Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps:
@@ -31,7 +18,7 @@
   requirement: |
     При раскрытии выпадающего списка юзер должен увидеть две строки Russia and English и соответствующие иконки к ним
   prerequisites: |
-    Открыта главная страница
+    Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps:
@@ -45,7 +32,7 @@
   requirement: |
     При вводе существующего товара пользователь должен его увидеть
   prerequisites: |
-    Открыта главная страница магазина
+    Открыта главная страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Пример товара: iphone
   steps:
@@ -58,7 +45,7 @@
   requirement: |
     При вводе несуществующего товара пользователь должен увидеть надпись Nothing found!
   prerequisites: |
-    Открыта главная страница магазина
+    Открыта главная страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     Пример товара: яблоко
   steps: 
@@ -71,7 +58,7 @@
   requirement: |
     при выборе любой категории категории пользователь должен увидеть только соответствующий товар
   prerequisites: |
-    Открыта главная страница магазина
+    Открыта главная страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps:
@@ -85,7 +72,7 @@
   requirement: |
     при повторном нажатии на выбранную категорию она должна отключаться
   prerequisites: |
-    Открыта главная страница магазина. 
+    Открыта главная страница магазина. https://hexlet-products-store.vercel.app/
   test-data: |
     Выбрана категория smartphones
   steps: 
@@ -99,7 +86,7 @@
   requirement: |
     при нажатии на чекбоксы каких-либо брендов пользователь должен увидеть только товары выбранных брендов
   prerequisites: |
-    открыта главная страница магазина
+    открыта главная страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     не должно быть выбрано ниодного товара
   steps:
@@ -113,7 +100,7 @@
   requirement: |
     При отключении фильтра пользователь должен увидеть все товары магазина, включая те, которых нет в наличии
   prerequisites: |
-    открыта главная страница магазина. In Stock выбрана по умолчанию
+    открыта главная страница магазина. In Stock выбрана по умолчанию https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps: 
@@ -126,7 +113,7 @@
   requirement: |
     При вводе данных из верного диапозона в нашем случае 0-11190 юзер должен увидеть только товары с заданным ценовым диапозоном
   prerequisites: |
-    открыта главная страница
+    открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     Frome 1000
     To 10000
@@ -141,7 +128,7 @@
   requirement: |
     При вводе данных из верного диапозона в нашем случае 0-11190 юзер должен увидеть только товары с заданным ценовым диапозоном
   prerequisites: |
-    открыта главная страница
+    открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     Frome 1000
   steps: 
@@ -154,7 +141,7 @@
   requirement: |
     При вводе данных из неверных данных или неверного диапозона юзер должен увидеть Not found и сообщение об ошибке
   prerequisites: |
-    открыта главная страница
+    открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     Frome sdgsg
     To 999999999
@@ -169,7 +156,7 @@
   requirement: |
     При выборе нескольки фильтров в Sidebar карточки товара должны соответствовать выбранным фильтрам
   prerequisites: |
-    открыта главная страница
+    открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     Category smartphones
     Apple
@@ -188,7 +175,7 @@
   requirement: |
     При нажатии на панеле навигации кнопок Previous или Next страницы должны переключаться. при достижении последней страницы - кнопка Next не должна больше нажиматься. На первой странице не должна нажиматься кнопка Previous
   prerequisites: |
-    Открыта главная страница
+    Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps:
@@ -202,7 +189,7 @@
   requirement: |
     На различных экранах карточки товара и общий вид магазина не должны иметь смещения текста и прочих изменений
   prerequisites: |
-    Открыта главная страница
+    Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     размер экрана 1280*688
   steps: 
@@ -211,30 +198,60 @@
      На экране 1280*688 карточки товара и общий вид магазина не должны иметь смещения текста и прочих изменений
      
 - summary: |
-    Тестирование Add to card
+    Тестирование Add to cart
   requirement: |
-    При использовании кнопка Add to card товар должен отправиться в корзину
+    При использовании кнопка Add to cart товар должен отправиться в корзину
   prerequisites: |
-    Открыта гланая страница
+    Открыта гланая страница https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps:
-    - выбрать какой-либо товар и нажать на кнопку Add to card
+    - выбрать какой-либо товар и нажать на кнопку Add to cart
   expected-result: |
     выбранный товар добавился в корзину
-    
+
 - summary: |
-    Тестирование Add to card в карточке товара
+    Тестирование Проверка наличия товара в корзине после использования кнопки Add to cart на главной странице
   requirement: |
-    При использовании кнопка Add to card товар должен отправиться в корзину
+    При использовании кнопки Add to cart товар должен отправиться в корзину, необходимо проверить соответствует ли действительности
   prerequisites: |
-    Открыта карточка товара iPhone X
+    Открыта гланая страница https://hexlet-products-store.vercel.app/
   test-data: |
     []
   steps:
-    - нажать на кнопку Add to card
+    - выбрать какой-либо товар и нажать на кнопку Add to cart
+    - открыть корзину (Сart) https://hexlet-products-store.vercel.app/cart
+    - проверить соответствует ли товар добавленному
+  expected-result: |
+    выбранный товар добавился в корзину и соответствует ему
+    
+- summary: |
+    Тестирование Add to cart в карточке товара
+  requirement: |
+    При использовании кнопка Add to cart товар должен отправиться в корзину
+  prerequisites: |
+    Открыта карточка товара iPhone X https://hexlet-products-store.vercel.app/products/2
+  test-data: |
+    []
+  steps:
+    - нажать на кнопку Add to cart
   expected-result: |
     выбранный товар добавился в корзину    
+
+    - summary: |
+    Тестирование Проверка наличия товара в корзине после использования кнопки Add to cart на карточке товара
+  requirement: |
+    При использовании кнопки Add to cart товар должен отправиться в корзину, необходимо проверить соответствует ли действительности
+  prerequisites: |
+    Открыта карточка товара iPhone X https://hexlet-products-store.vercel.app/products/2
+  test-data: |
+    []
+  steps:
+    - нажать на кнопку Add to cart 
+    - открыть корзину (Сart) https://hexlet-products-store.vercel.app/cart
+    - проверить соответствует ли товар добавленному
+  expected-result: |
+    выбранный товар добавился в корзину и соответствует ему
   
 - summary: |
     Описание в карточки товара
